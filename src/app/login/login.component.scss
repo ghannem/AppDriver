@@ -1,0 +1,102 @@
+/* CSS only for examples not required for centering */
+.myContainer{
+    height: 100%;
+}
+.login-form{
+    border: 2px solid #428bca ;
+    padding: 8%;
+    background: #f05837;
+    box-shadow: 0 5px 8px 0 #00000033, 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.seConnecterStyle{
+    font-size: 25px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0); /* bg-color transparent */
+}
+.btnSubmit{
+    font-weight: 600;
+    width: 40%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+}
+.errorMsg{
+    color: black;
+    font-size: 1em; //default
+    font-weight: bolder;
+}
+/* .login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+} */
+/* .login-logo{
+    position: relative;
+    margin-left: -75%;
+} */
+/* .login-logo img{
+    width: 20%;
+    position: absolute;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+} */
+
+/* .page-container{
+	width:100%;
+	overflow:hidden;	
+}
+.card-box{
+    border: 1px solid rgba(54, 64, 74, 0.1);
+    padding:40px 0 20px 0;
+}
+.card-box{
+	padding:20px 10px 20px 10;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border:0;
+	box-shadow:none;
+}
+.card-box{
+	margin-left:15px;
+	margin-right:15px;
+	border:1px solid #ccc;
+}
+.card-box{
+	border:1px solid #000;
+
+}
+.card-box{
+	padding:6px 10px;
+	 background:#fff;
+	 border:0;
+}
+.card-box{
+	font-size:18px; 
+	color:#6e6b70;
+}
+.card-box{
+	width:30%;
+	float:right;
+	padding:10px;
+	margin-top:20px;
+	border:0;
+	border-radius:0;
+	background-color: #2e4158 ;
+	border: 1px solid #415772 ;
+	color:#fff;
+	box-shadow:none;
+	border:none;
+} */

@@ -1,0 +1,25 @@
+
+<app-nav-bar></app-nav-bar>
+
+<div class="myContainer container-fluid">
+  <!-- show loading icon if list is empty -->
+  <div class="row h-75" *ngIf="!itineraries">
+    <div class="mx-auto my-auto">
+      <app-loading-animation></app-loading-animation>
+    </div>
+  </div>
+
+  <div class="row h-75" *ngIf="itineraries">
+    <div class="row col-sm-12 mx-auto my-auto">
+      <!-- Extra small devices (portrait phones, less than 576px) : col- ==> one card per line
+        Small devices (landscape phones, less than 768px) : col-sm ==> one card per line
+        Medium devices (tablets, less than 992px) : col-md ==> one card per line
+        Large devices (desktops, less than 1200px) : col-lg ==> one card per line -->
+      <div class="col-sm-6 mx-auto">
+        <app-card class="col-12 col-sm-12 col-md-12 col-lg-12" *ngFor="let itinerary of itineraries"
+          [itinerary]="itinerary">
+        </app-card>
+      </div>
+    </div>
+  </div>
+</div>

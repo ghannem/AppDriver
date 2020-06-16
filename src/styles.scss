@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+}
+
+/* Background-size css property Works in :
+* Safari 3+
+* Chrome Whatever+
+* IE 9+
+* Opera 10+ (Opera 9.5 supported background-size but not the keywords)
+* Firefox 3.6+ (Firefox 4 supports non-vendor prefixed version) */
+body {
+    background: url("src/assets/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover; // vendors Chrome, Safari, Android...
+    -moz-background-size: cover; // vendor Mozilla
+    -o-background-size: cover; // vendor Opera
+    background-size: cover;
+}

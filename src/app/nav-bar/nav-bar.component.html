@@ -1,0 +1,49 @@
+
+<!-- navbar-expand on samll screens and bigger, not on extra small screens < 576 px-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark"> 
+  <a class="navbar-brand" href="/allBuses">
+    <img src="../../assets/logo-mini.png" width="50" height="30" class="d-inline-block" alt="">
+    AppDriver
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav mr-5">
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/allBuses">Choisir bus</a>
+      </li>
+  
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/allLines">Choisir ligne</a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/allDestinations">Choisir destination</a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" routerLink="/allDepartureTimes">Choisir Heure départ</a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0 mr-auto">
+      <input class="form-control mr-sm-2" type="search" placeholder="Trouver votre bus" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Chercher</button>
+    </form>
+
+    <ul class="navbar-nav">
+      <li class="nav-item mr-4">
+        <span class="navbar-text text-white">
+          Bienvenue, {{user.username}}
+        </span>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/login" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>

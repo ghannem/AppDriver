@@ -1,0 +1,39 @@
+
+<div class="myContainer container-fluid">
+    <div class="row h-100">
+        <!--vertical align on parent using my-auto-->
+        <div class="col-sm-12 my-auto">
+            <!-- or we can use <div class="card w-25 mx-auto login-form"> -->
+            <!-- horizontal algin on parent using mx-auto -->
+            <div class="card text-center col-sm-6 col-md-5 col-lg-4 mx-auto login-form">
+                <div class="login-logo">
+                    <img src="../../assets/logo.png" alt=""/>
+                </div>
+                <div class="card-header seConnecterStyle border-0">Se connecter</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input [(ngModel)]="user.username" type="text" class="form-control mt-5" placeholder="Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="user.password" type="password" class="form-control" placeholder="Mot de passe *" value="" />
+                    </div>
+                    <p class="errorMsg" *ngIf="showErrorMsg">Login et/ou mot de passe incorrect(s) !</p>
+                    <div class="form-group">
+                        <!-- use bootstrap btn-block so the button takes the width of its parent -->
+                        <!-- <div class="col-sm-12 row mx-auto">
+                            <div class="col-sm-6"> -->
+                                <input (click)="reset()" type="submit" class="btn btn-secondary btn-block" value="Annuler" />
+                            <!-- </div>
+                            <div class="col-sm-6"> -->
+                                <input (click)="authenticate()" type="submit" class="btn btn-primary btn-block" value="Se connecter" />
+                            <!-- </div>
+                        </div> -->
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="btnForgetPwd" value="Login">Mot de passe oublié?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

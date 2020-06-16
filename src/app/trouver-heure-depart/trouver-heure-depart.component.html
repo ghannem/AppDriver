@@ -1,0 +1,25 @@
+
+<app-nav-bar></app-nav-bar>
+
+<div class="myContainer container-fluid">
+  <!-- show loading icon if list is empty -->
+  <div class="row h-75" *ngIf="!trips">
+    <div class="mx-auto my-auto">
+      <app-loading-animation></app-loading-animation>
+    </div>
+  </div>
+
+  <div class="row h-75" *ngIf="trips">
+    <div class="row col-sm-12 mx-auto my-auto">
+      <!-- Extra small devices (portrait phones, less than 576px) : col- ==> one card per line
+        Small devices (landscape phones, less than 768px) : col-sm ==> three cards per line
+        Medium devices (tablets, less than 992px) : col-md ==> four cards per line
+        Large devices (desktops, less than 1200px) : col-lg ==> four cards per line -->
+      <div class="col-sm-3 mx-auto">
+        <app-card class="col-12 col-sm-4 col-md-3 col-lg-3" *ngFor="let trip of trips"
+          [trip]="trip">
+        </app-card>
+      </div>
+    </div>
+  </div>
+</div>

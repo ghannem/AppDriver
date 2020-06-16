@@ -1,0 +1,14 @@
+
+<div class="card my-3"> <!-- mx-auto -->
+  <div class="text-center my-auto">
+      <img *ngIf="bus" class="img-fluid img-thumbnail mt-2" src="../../assets/bus_mini.png" alt="icone bus" width="32" height="35">
+      <img *ngIf="line" class="img-fluid img-thumbnail mt-2" src="../../assets/marker_station.png" alt="icone marqueur station" width="32" height="35">
+      <img *ngIf="itinerary" class="img-fluid img-thumbnail mt-2" src="../../assets/station.png" alt="icone station" width="32" height="35">
+      <div class="card-body">
+        <p class="card-text" *ngIf="bus">{{bus.registration_plate}}</p>
+        <p class="card-text" *ngIf="line">{{line.latin_code}}</p>
+        <p class="card-text" *ngIf="itinerary">{{itinerary.departure_stop_latin}}</p>
+        <p class="card-text" *ngIf="trip">{{trip.departure_time}}</p>
+      </div>
+  </div>
+</div>
